@@ -1,43 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Timetable</title>
+    <title>Time Table</title>
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: separate; /* needed for cellspacing to show */
+            width: 100%;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Class Timetable</h2>
 
-    <table border="1" cellspacing="5" cellpadding="10">
-        <caption><b>Weekly Timetable</b></caption>
+    <h3>III - IT A</h3>
 
-        <!-- Header Row -->
+    <table cellspacing="2" cellpadding="3">
+        <caption>Class Time Table</caption>
+
         <tr>
-            <th>Day</th>
-            <th>9-10 AM</th>
-            <th>10-11 AM</th>
-            <th>11-12 PM</th>
-            <th>12-1 PM</th>
+            <th>DAY</th>
+            <th>09:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:00-11:10</th>
+            <th>11:10-12:10</th>
+            <th>12:10-01:10</th>
+            <th>01:10-02:10</th>
+            <th>02:10-03:10</th>
+            <th>03:10-04:30</th>
         </tr>
 
-        <!-- Monday -->
         <tr>
-            <td rowspan="2">Monday</td>
-            <td>Math</td>
-            <td>Science</td>
-            <td rowspan="2">English</td>
-            <td>Lunch</td>
-        </tr>
-        <tr>
-            <td colspan="2">Computer Lab</td>
-            <td>Sports</td>
+            <td>MONDAY</td>
+            <td>AT&amp;CD</td>
+            <td>DWDM</td>
+            <td rowspan="6">B<br>R<br>E<br>A<br>K</td>
+            <td>AOR</td>
+            <td>AJ</td>
+            <td rowspan="6">L<br>U<br>N<br>C<br>H<br><br>B<br>R<br>E<br>A<br>K</td>
+            <td colspan="2">AJ LAB</td>
         </tr>
 
-        <!-- Tuesday -->
         <tr>
-            <td>Tuesday</td>
-            <td>Math</td>
-            <td>Science</td>
-            <td>English</td>
-            <td>Lunch</td>
+            <td>TUESDAY</td>
+            <td>CN</td>
+            <td>TPL</td>
+            <td>DWDM</td>
+            <td>APTITUDE</td>
+            <td>AT&amp;CD</td>
+            <td>AJ</td>
+        </tr>
+
+        <tr>
+            <td>WEDNESDAY</td>
+            <td>AJ</td>
+            <td>CN</td>
+            <td colspan="2">TT</td>
+            <td colspan="2">CN LAB</td>
+        </tr>
+
+        <tr>
+            <td>THURSDAY</td>
+            <td colspan="2">Communication Skill</td>
+            <td>AOR</td>
+            <td>AT&amp;CD</td>
+            <td>AJ</td>
+            <td>CN</td>
+        </tr>
+
+        <tr>
+            <td>FRIDAY</td>
+            <td>DWDM</td>
+            <td>CN</td>
+            <td colspan="2">UI LAB</td>
+            <td colspan="2">Aptitude</td>
+        </tr>
+
+        <tr>
+            <td>SATURDAY</td>
+            <td>AOR</td>
+            <td>FST</td>
+            <td colspan="2">FSD 1 LAB</td>
+            <td>DWDM</td>
+            <td>AT&amp;CD</td>
         </tr>
     </table>
 
